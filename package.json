@@ -1,14 +1,14 @@
 {
   "name": "projeto-teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "[ ![Codeship Status for tuliofaria/ci-cd-projeto-teste](https://app.codeship.com/projects/3048d5c0-8f29-0135-e440-123d7e857dcf/status?branch=master)](https://app.codeship.com/projects/249910)",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec **/*.test.js",
     "start": "node index.js",
     "coverage": "nyc mocha --reporter spec **/*.test.js"
   },
-  "author": "",
+  "author": "Rafael Caffonso <rafaelcaffonso@gmail.com> (https://rafaelcaffonso.com.br/)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.1"
@@ -18,5 +18,13 @@
     "mocha": "^4.0.1",
     "nyc": "^11.2.1",
     "sinon": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafael955/ci-cd-projeto-teste.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rafael955/ci-cd-projeto-teste/issues"
+  },
+  "homepage": "https://github.com/Rafael955/ci-cd-projeto-teste#readme"
 }

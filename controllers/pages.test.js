@@ -31,7 +31,7 @@ describe('Pages', () => {
     expect(res.send.calledOnce).to.be.true
     expect(res.send.calledWith('Page2')).to.be.true
   })
-  it('should calc properly - divisivel ', () => {
+  it('should calc properly - divisivel', () => {
     const req = {
       params: {
         num1: 10,
@@ -50,6 +50,21 @@ describe('Pages', () => {
       params: {
         num1: 10,
         num2: 6
+      }
+    }
+    const res = {
+      send: sinon.spy()
+    }
+    pages.calc(req, res)
+    expect(res.send.calledOnce).to.be.true
+    expect(res.send.calledWith('NaoDivisivel')).to.be.true
+  })
+
+  it('should calc properly - nao divisivel zero', () => {
+    const req = {
+      params: {
+        num1: 10,
+        num2: 0
       }
     }
     const res = {
